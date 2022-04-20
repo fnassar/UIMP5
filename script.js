@@ -50,6 +50,8 @@ window.addEventListener('load', () => {
         e.preventDefault();
         name_nationalitydiv.style.display = "none";
         canwego.style.display = "flex";
+        canwego.style.alignItems = "center";
+        canwego.style.justifyContent = "space-between";
         fetchData(document.getElementById('countryForm_input2').value, namee, document.getElementById('countryForm_input1').value);
     })
 })
