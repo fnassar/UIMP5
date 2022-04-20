@@ -155,16 +155,18 @@ input {
     background: transparent;
     border: 1px solid #faebd722;
     color: antiquewhite;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .desiredCountry {
-    font-size: 2.5vw;
+    font-size: 2vw;
     height: auto;
+    line-height: 2;
+    margin: 5vh;
 }
 
 .button {
-    margin: 3vh 0 0 0;
+    margin: 3vh 0;
     padding: 1.5vh;
     height: 6vh;
     width: 20vw;
@@ -182,18 +184,28 @@ input {
 .canwego {
     display: none;
     flex-direction: column;
+    align-items: center;
 }
 
 .countryForm_select {
     padding: 2vh;
-    width: 32.5vw;
+    width: 32vw;
+    margin: 1vh 0;
     background: transparent;
     border: 1px solid #faebd722;
     color: antiquewhite;
     background-color: #191718;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .placeholder {
     color: #887f7522;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
 }

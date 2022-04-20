@@ -59,17 +59,19 @@
             <div class="name_nationality" id="name_nationality">
                 <p class="desiredCountry" id="desiredCountry">You want to go to</p>
                 <form id="countryForm" class="countryForm">
-                    <input id="countryForm_input1" type="text" placeholder="Please write your Name here">
-                    <select name="Country" class="countryForm_select" id="countryForm_input2">
+                    <input id="countryForm_input1" type="text" placeholder="Please write your Name here" required>
+                    <select name="Country" class="countryForm_select" id="countryForm_input2" required>
                         <option value="" class="placeholder">--Please Select a Country--</option>
                     </select>
+                    <button type="submit" class="button next" id="next">next</button>
                 </form>
-                <button type="button" class="button next" id="next">next</button>
+
                 <button type="button" class="button goBack" id="goBack">Go Back to HomePage</button>
             </div>
             <div class="canwego" id="canwego">
                 <h2 id="text_canwego"></h2>
                 <h2 id="text_canwego2"></h2>
+                <button type="button" class="button goBack" id="goBack2">Go Back to HomePage</button>
             </div>
         </section>
 

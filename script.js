@@ -5,6 +5,7 @@ let titleSection;
 let overlay;
 // buttons
 let goBackButton;
+let goBackButton2;
 let nextButton;
 // divs
 let canwegodiv;
@@ -19,6 +20,7 @@ window.addEventListener('load', () => {
     flyers = document.getElementsByClassName('flyers_img');
     overlay = document.getElementById('overlay');
     goBackButton = document.getElementById('goBack');
+    goBackButton2 = document.getElementById('goBack2');
     nextButton = document.getElementById('next');
     canwegodiv = document.getElementById('canwego');
     name_nationalitydiv = document.getElementById('name_nationality');
@@ -40,7 +42,12 @@ window.addEventListener('load', () => {
         overlay.style.display = "none";
         flyers.overflow = "scroll";
     })
-    nextButton.addEventListener('click', () => {
+    goBackButton2.addEventListener('click', () => {
+        overlay.style.display = "none";
+        flyers.overflow = "scroll";
+    })
+    countryForm.addEventListener('submit', (e) => {
+        e.preventDefault();
         name_nationalitydiv.style.display = "none";
         canwego.style.display = "flex";
         fetchData(document.getElementById('countryForm_input2').value, namee, document.getElementById('countryForm_input1').value);
@@ -54,11 +61,11 @@ function fetchData(nationality, countryName, username) {
         .then((data) => {
             console.log(data);
             console.log(data[countryName][nationality], username);
-            document.getElementById('text_canwego').innerHTML = username + " your Country status is " + data[countryName][nationality] + " to go to " + countryName;
+            document.getElementById('text_canwego').innerHTML = username + " your Country '" + nationality + "' status is '" + data[countryName][nationality] + "' to go to " + countryName;
             if (data[countryName][nationality] == "e-visa" || data[countryName][nationality] == "visa on arrival") {
                 document.getElementById('text_canwego2').innerHTML = "<b>YOU ARE ELIGIBLE YAY</b>(lets not talk about the power you feel right now)</br>(this is easy)";
             } else {
-                document.getElementById('text_canwego2').innerHTML = "so you either go so through a long long process</br> or u don't go at all,</br> feel defeated, powerless, we feel you...";
+                document.getElementById('text_canwego2').innerHTML = "So you either go so through a long long process</br> or u don't go at all.</br> Feel defeated? Powerless? we feel you...";
             }
         })
 }
