@@ -85,8 +85,8 @@ nav ul li {
 }
 
 .flyers_img {
-    width: 20vw;
-    height: auto;
+    width: auto;
+    height: 30vw;
     margin: 4vh 5vw;
     cursor: pointer;
     display: block;
