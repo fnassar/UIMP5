@@ -45,6 +45,8 @@ window.addEventListener('load', () => {
     goBackButton2.addEventListener('click', () => {
         overlay.style.display = "none";
         flyers.overflow = "scroll";
+        name_nationalitydiv.style.display = "flex";
+        canwego.style.display = "none";
     })
     countryForm.addEventListener('submit', (e) => {
         e.preventDefault();
