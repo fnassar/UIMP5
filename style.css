@@ -1,0 +1,199 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh 4vw;
+    background-color: #191718;
+    color: antiquewhite;
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    position: relative;
+}
+
+.Loop {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #797166 #191718;
+}
+
+.loop:hover {
+    scrollbar-color: #b1a897 #191718;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 97%;
+    scroll-snap-align: start;
+}
+
+main::scrollbar {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1vh 0;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: grey
+}
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.title {
+    justify-content: center;
+    border-bottom: 1px solid antiquewhite;
+}
+
+.flyers_img {
+    width: 20vw;
+    height: auto;
+    margin: 4vh 5vw;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.flyers {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 5vw;
+    width: 82vw;
+    height: 85vh;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(250, 235, 215, 0.4) #191718;
+}
+
+.container:hover {
+    scrollbar-color: #c9beab #191718;
+}
+
+.overlay {
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #191718;
+    z-index: 10;
+    justify-content: center;
+}
+
+div.scroll-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    min-height: 15vh;
+    position: absolute;
+    bottom: 3vh;
+}
+
+div.scroll-icon p {
+    margin: 0px;
+    font-size: 3vw;
+    line-height: 2.5vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+input {
+    padding: 2vh;
+    /* border: none; */
+    width: 30vw;
+    background: transparent;
+    border: 1px solid #faebd722;
+    color: antiquewhite;
+    font-size: 2vw;
+}
+
+.desiredCountry {
+    font-size: 2.5vw;
+    height: auto;
+}
+
+.button {
+    margin: 3vh 0 0 0;
+    padding: 1.5vh;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 3vh;
+    background-color: #888;
+    cursor: pointer;
+}
+
+.name_nationality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canwego {
+    display: none;
+    flex-direction: column;
+}
+
+.countryForm_select {
+    padding: 2vh;
+    width: 32.5vw;
+    background: transparent;
+    border: 1px solid #faebd722;
+    color: antiquewhite;
+    background-color: #191718;
+    font-size: 2vw;
+}
+
+.placeholder {
+    color: #887f7522;
+}

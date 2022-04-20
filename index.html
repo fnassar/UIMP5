@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js"></script>
+    <!-- iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben&family=Rubik+Beastly&display=swap" rel="stylesheet">
+
+    <title>Find Your Destination</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="nav-link" href="#title">Title</a></li>
+            <li><a class="nav-link" href="#flyers">Flyers</a></li>
+
+        </ul>
+    </nav>
+    <main class="Loop js-loop" id="js-loop">
+        <section class="container title" id="title">
+            <h1>
+                Find Your Destination
+            </h1>
+            <h2>
+                choose a flyer and half your work is done
+            </h2>
+            <div class="scroll-icon">
+                <p>
+                    <span class="iconify" data-icon="bx:bxs-mouse" data-inline="false"></span>
+                    </br>
+                    <span class="iconify" data-icon="bx:bx-chevrons-down" data-inline="false"></span>
+                </p>
+            </div>
+        </section>
+        <section class="container flyers" id="flyers">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+            <img src="assets/images/tempimg.jpg" alt="imghere" class="flyers_img">
+        </section>
+        <section id="overlay" class="container overlay">
+            <div class="name_nationality" id="name_nationality">
+                <p class="desiredCountry" id="desiredCountry">You want to go to</p>
+                <form id="countryForm" class="countryForm">
+                    <input id="countryForm_input1" type="text" placeholder="Please write your Name here">
+                    <select name="Country" class="countryForm_select" id="countryForm_input2">
+                        <option value="" class="placeholder">--Please Select a Country--</option>
+                    </select>
+                </form>
+                <button type="button" class="button next" id="next">next</button>
+                <button type="button" class="button goBack" id="goBack">Go Back to HomePage</button>
+            </div>
+            <div class="canwego" id="canwego">
+                <h2 id="text_canwego"></h2>
+                <h2 id="text_canwego2"></h2>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
