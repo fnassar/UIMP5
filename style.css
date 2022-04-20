@@ -155,7 +155,7 @@ input {
     background: transparent;
     border: 1px solid #faebd722;
     color: antiquewhite;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .desiredCountry {
@@ -191,7 +191,7 @@ input {
     border: 1px solid #faebd722;
     color: antiquewhite;
     background-color: #191718;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .placeholder {
