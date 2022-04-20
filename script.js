@@ -13,7 +13,7 @@ let name_nationalitydiv;
 //
 let desiredCountry;
 let countryForm;
-let namesinFlyers = ["Maldives", "China", "Vietnam", "Australia", "India", "Greece", "Scotland", "Ireland"];
+let namesinFlyers = ["Maldives", "Australia", "China", "Greece", "Vietnam",  "Scotland", "India", "Ireland"];
 let namee;
 
 window.addEventListener('load', () => {
